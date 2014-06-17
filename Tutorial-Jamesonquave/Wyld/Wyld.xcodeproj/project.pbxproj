@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F901DC15194FCADD00B729E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F901DC14194FCADD00B729E5 /* AppDelegate.swift */; };
+		F901DC17194FCADD00B729E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F901DC16194FCADD00B729E5 /* ViewController.swift */; };
+		F901DC1A194FCADD00B729E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F901DC18194FCADD00B729E5 /* Main.storyboard */; };
+		F901DC1C194FCADD00B729E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F901DC1B194FCADD00B729E5 /* Images.xcassets */; };
+		F901DC28194FCADE00B729E5 /* WyldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F901DC27194FCADE00B729E5 /* WyldTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F901DC22194FCADE00B729E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F901DC07194FCADD00B729E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F901DC0E194FCADD00B729E5;
+			remoteInfo = Wyld;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F901DC0F194FCADD00B729E5 /* Wyld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wyld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F901DC13194FCADD00B729E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F901DC14194FCADD00B729E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F901DC16194FCADD00B729E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F901DC19194FCADD00B729E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F901DC1B194FCADD00B729E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F901DC21194FCADE00B729E5 /* WyldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WyldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F901DC26194FCADE00B729E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F901DC27194FCADE00B729E5 /* WyldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WyldTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F901DC0C194FCADD00B729E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F901DC1E194FCADE00B729E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F901DC06194FCADD00B729E5 = {
+			isa = PBXGroup;
+			children = (
+				F901DC11194FCADD00B729E5 /* Wyld */,
+				F901DC24194FCADE00B729E5 /* WyldTests */,
+				F901DC10194FCADD00B729E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F901DC10194FCADD00B729E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F901DC0F194FCADD00B729E5 /* Wyld.app */,
+				F901DC21194FCADE00B729E5 /* WyldTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F901DC11194FCADD00B729E5 /* Wyld */ = {
+			isa = PBXGroup;
+			children = (
+				F901DC14194FCADD00B729E5 /* AppDelegate.swift */,
+				F901DC16194FCADD00B729E5 /* ViewController.swift */,
+				F901DC18194FCADD00B729E5 /* Main.storyboard */,
+				F901DC1B194FCADD00B729E5 /* Images.xcassets */,
+				F901DC12194FCADD00B729E5 /* Supporting Files */,
+			);
+			path = Wyld;
+			sourceTree = "<group>";
+		};
+		F901DC12194FCADD00B729E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F901DC13194FCADD00B729E5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F901DC24194FCADE00B729E5 /* WyldTests */ = {
+			isa = PBXGroup;
+			children = (
+				F901DC27194FCADE00B729E5 /* WyldTests.swift */,
+				F901DC25194FCADE00B729E5 /* Supporting Files */,
+			);
+			path = WyldTests;
+			sourceTree = "<group>";
+		};
+		F901DC25194FCADE00B729E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F901DC26194FCADE00B729E5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F901DC0E194FCADD00B729E5 /* Wyld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F901DC2B194FCADE00B729E5 /* Build configuration list for PBXNativeTarget "Wyld" */;
+			buildPhases = (
+				F901DC0B194FCADD00B729E5 /* Sources */,
+				F901DC0C194FCADD00B729E5 /* Frameworks */,
+				F901DC0D194FCADD00B729E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wyld;
+			productName = Wyld;
+			productReference = F901DC0F194FCADD00B729E5 /* Wyld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F901DC20194FCADE00B729E5 /* WyldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F901DC2E194FCADE00B729E5 /* Build configuration list for PBXNativeTarget "WyldTests" */;
+			buildPhases = (
+				F901DC1D194FCADE00B729E5 /* Sources */,
+				F901DC1E194FCADE00B729E5 /* Frameworks */,
+				F901DC1F194FCADE00B729E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F901DC23194FCADE00B729E5 /* PBXTargetDependency */,
+			);
+			name = WyldTests;
+			productName = WyldTests;
+			productReference = F901DC21194FCADE00B729E5 /* WyldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F901DC07194FCADD00B729E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Hector Enrique Gomez Morales";
+				TargetAttributes = {
+					F901DC0E194FCADD00B729E5 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F901DC20194FCADE00B729E5 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F901DC0E194FCADD00B729E5;
+					};
+				};
+			};
+			buildConfigurationList = F901DC0A194FCADD00B729E5 /* Build configuration list for PBXProject "Wyld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F901DC06194FCADD00B729E5;
+			productRefGroup = F901DC10194FCADD00B729E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F901DC0E194FCADD00B729E5 /* Wyld */,
+				F901DC20194FCADE00B729E5 /* WyldTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F901DC0D194FCADD00B729E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F901DC1A194FCADD00B729E5 /* Main.storyboard in Resources */,
+				F901DC1C194FCADD00B729E5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F901DC1F194FCADE00B729E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F901DC0B194FCADD00B729E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F901DC17194FCADD00B729E5 /* ViewController.swift in Sources */,
+				F901DC15194FCADD00B729E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F901DC1D194FCADE00B729E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F901DC28194FCADE00B729E5 /* WyldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F901DC23194FCADE00B729E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F901DC0E194FCADD00B729E5 /* Wyld */;
+			targetProxy = F901DC22194FCADE00B729E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F901DC18194FCADD00B729E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F901DC19194FCADD00B729E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F901DC29194FCADE00B729E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F901DC2A194FCADE00B729E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F901DC2C194FCADE00B729E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Wyld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F901DC2D194FCADE00B729E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Wyld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F901DC2F194FCADE00B729E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wyld.app/Wyld";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WyldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		F901DC30194FCADE00B729E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Wyld.app/Wyld";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WyldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F901DC0A194FCADD00B729E5 /* Build configuration list for PBXProject "Wyld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F901DC29194FCADE00B729E5 /* Debug */,
+				F901DC2A194FCADE00B729E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F901DC2B194FCADE00B729E5 /* Build configuration list for PBXNativeTarget "Wyld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F901DC2C194FCADE00B729E5 /* Debug */,
+				F901DC2D194FCADE00B729E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F901DC2E194FCADE00B729E5 /* Build configuration list for PBXNativeTarget "WyldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F901DC2F194FCADE00B729E5 /* Debug */,
+				F901DC30194FCADE00B729E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F901DC07194FCADD00B729E5 /* Project object */;
+}
