@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F901DC15194FCADD00B729E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F901DC14194FCADD00B729E5 /* AppDelegate.swift */; };
-		F901DC17194FCADD00B729E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F901DC16194FCADD00B729E5 /* ViewController.swift */; };
+		F901DC17194FCADD00B729E5 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F901DC16194FCADD00B729E5 /* SearchResultsViewController.swift */; };
 		F901DC1A194FCADD00B729E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F901DC18194FCADD00B729E5 /* Main.storyboard */; };
 		F901DC1C194FCADD00B729E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F901DC1B194FCADD00B729E5 /* Images.xcassets */; };
 		F901DC28194FCADE00B729E5 /* WyldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F901DC27194FCADE00B729E5 /* WyldTests.swift */; };
+		F9F2315619510CE300B0DFAC /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F2315519510CE300B0DFAC /* APIController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +29,13 @@
 		F901DC0F194FCADD00B729E5 /* Wyld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wyld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F901DC13194FCADD00B729E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F901DC14194FCADD00B729E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F901DC16194FCADD00B729E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F901DC16194FCADD00B729E5 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		F901DC19194FCADD00B729E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F901DC1B194FCADD00B729E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F901DC21194FCADE00B729E5 /* WyldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WyldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F901DC26194FCADE00B729E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F901DC27194FCADE00B729E5 /* WyldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WyldTests.swift; sourceTree = "<group>"; };
+		F9F2315519510CE300B0DFAC /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				F901DC14194FCADD00B729E5 /* AppDelegate.swift */,
-				F901DC16194FCADD00B729E5 /* ViewController.swift */,
+				F901DC16194FCADD00B729E5 /* SearchResultsViewController.swift */,
+				F9F2315519510CE300B0DFAC /* APIController.swift */,
 				F901DC18194FCADD00B729E5 /* Main.storyboard */,
 				F901DC1B194FCADD00B729E5 /* Images.xcassets */,
 				F901DC12194FCADD00B729E5 /* Supporting Files */,
@@ -208,8 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F901DC17194FCADD00B729E5 /* ViewController.swift in Sources */,
+				F901DC17194FCADD00B729E5 /* SearchResultsViewController.swift in Sources */,
 				F901DC15194FCADD00B729E5 /* AppDelegate.swift in Sources */,
+				F9F2315619510CE300B0DFAC /* APIController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +401,7 @@
 				F901DC2D194FCADE00B729E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F901DC2E194FCADE00B729E5 /* Build configuration list for PBXNativeTarget "WyldTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +410,7 @@
 				F901DC30194FCADE00B729E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
