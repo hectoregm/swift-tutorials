@@ -26,7 +26,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func didReceiveAPIResults(results: NSDictionary) {
-        var resultsArr: NSArray = results["results"] as NSArray
+        var resultsArr = results["results"] as NSArray
         dispatch_async(dispatch_get_main_queue(), {
             self.tableData = resultsArr
             self.appsTableView.reloadData()
@@ -38,23 +38,37 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyTestCell")
+        let kCellIdentifier = "SearchResultCell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(kCellIdentifier) as UITableViewCell
         
-        var rawData: NSDictionary = self.tableData[indexPath.row] as NSDictionary
+        var rawData = self.tableData[indexPath.row] as NSDictionary
         
         cell.text = rawData["trackName"] as String
         
-        var urlString: NSString = rawData["artworkUrl60"] as NSString
-        var imgURL: NSURL = NSURL(string: urlString)
+        var urlString = rawData["artworkUrl60"] as NSString
+        var imgURL = NSURL(string: urlString)
         
-        var imgData: NSData = NSData(contentsOfURL: imgURL)
+        var imgData = NSData(contentsOfURL: imgURL)
         cell.image = UIImage(data: imgData)
         
-        var formattedPrice: NSString = rawData["formattedPrice"] as NSString
+        var formattedPrice = rawData["formattedPrice"] as NSString
 
         cell.detailTextLabel.text = formattedPrice
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        var rowData = self.tableData[indexPath.row] as NSDictionary
+        
+        var name = rowData["trackName"] as String
+        var formattedPrice = rowData["formattedPrice"] as String
+        
+        var alert = UIAlertView()
+        alert.title = name
+        alert.message = formattedPrice
+        alert.addButtonWithTitle("Ok")
+        alert.show()
     }
 }
 
