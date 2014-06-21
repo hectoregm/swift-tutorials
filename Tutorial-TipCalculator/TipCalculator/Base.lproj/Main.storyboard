@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lce-SW-eJB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lce-SW-eJB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
     </dependencies>
     <scenes>
         <!--View Controller - Tip Calculator-->
@@ -48,32 +48,39 @@
                                     <action selector="calculateTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IUE-b0-tTB"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ll-VI-rlb">
-                                <rect key="frame" x="20" y="187" width="440" height="288"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zXo-UQ-MMi">
+                                <rect key="frame" x="0.0" y="187" width="580" height="293"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="580" id="wjH-El-LX5"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="0yY-Yz-pE1"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="byw-Du-Xpy"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="z9Y-Lh-YNU" secondAttribute="trailing" constant="20" symbolic="YES" id="40j-4W-ofo"/>
-                            <constraint firstItem="KZC-ly-QcO" firstAttribute="trailing" secondItem="6Ll-VI-rlb" secondAttribute="trailing" id="BLI-Oa-7D5"/>
+                            <constraint firstItem="a90-4L-nMy" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8pq-oJ-lFM"/>
+                            <constraint firstItem="zXo-UQ-MMi" firstAttribute="top" secondItem="a90-4L-nMy" secondAttribute="bottom" constant="8" symbolic="YES" id="CKw-LD-Tmw"/>
+                            <constraint firstAttribute="bottom" secondItem="zXo-UQ-MMi" secondAttribute="bottom" id="Ehy-WH-er1"/>
                             <constraint firstItem="z9Y-Lh-YNU" firstAttribute="leading" secondItem="KZC-ly-QcO" secondAttribute="leading" id="Fkh-OU-OVN"/>
                             <constraint firstItem="z9Y-Lh-YNU" firstAttribute="leading" secondItem="hPV-Yp-dAG" secondAttribute="trailing" constant="8" symbolic="YES" id="Gw1-3x-yeS"/>
-                            <constraint firstItem="Nbm-cS-Xrw" firstAttribute="leading" secondItem="6Ll-VI-rlb" secondAttribute="leading" id="Qfr-4b-igL"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6Ll-VI-rlb" secondAttribute="bottom" constant="5" id="QgC-lp-3MR"/>
+                            <constraint firstItem="zXo-UQ-MMi" firstAttribute="top" secondItem="a90-4L-nMy" secondAttribute="bottom" constant="8" id="Nwc-0m-IcV"/>
                             <constraint firstItem="z9Y-Lh-YNU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="S0B-Y2-Cov"/>
                             <constraint firstItem="Nbm-cS-Xrw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="V8i-3x-u7I"/>
                             <constraint firstItem="KZC-ly-QcO" firstAttribute="leading" secondItem="Nbm-cS-Xrw" secondAttribute="trailing" constant="8" symbolic="YES" id="cWJ-NO-wkG"/>
+                            <constraint firstItem="zXo-UQ-MMi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="e0C-hG-Lzk"/>
                             <constraint firstItem="KZC-ly-QcO" firstAttribute="top" secondItem="z9Y-Lh-YNU" secondAttribute="bottom" constant="9" id="fsB-1k-dVI"/>
+                            <constraint firstItem="zXo-UQ-MMi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="gqN-MK-Jlx"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="zXo-UQ-MMi" secondAttribute="bottom" id="hD6-3z-U4B"/>
                             <constraint firstItem="a90-4L-nMy" firstAttribute="top" secondItem="KZC-ly-QcO" secondAttribute="bottom" constant="8" symbolic="YES" id="kBJ-oN-nBW"/>
                             <constraint firstItem="z9Y-Lh-YNU" firstAttribute="bottom" secondItem="hPV-Yp-dAG" secondAttribute="bottom" id="l6n-W9-yhM"/>
                             <constraint firstItem="KZC-ly-QcO" firstAttribute="trailing" secondItem="z9Y-Lh-YNU" secondAttribute="trailing" id="lbe-BH-vAK"/>
                             <constraint firstItem="KZC-ly-QcO" firstAttribute="bottom" secondItem="Nbm-cS-Xrw" secondAttribute="bottom" id="ltQ-cb-U2j"/>
-                            <constraint firstItem="6Ll-VI-rlb" firstAttribute="centerX" secondItem="a90-4L-nMy" secondAttribute="centerX" id="xC6-xy-cto"/>
-                            <constraint firstItem="6Ll-VI-rlb" firstAttribute="top" secondItem="a90-4L-nMy" secondAttribute="bottom" constant="8" symbolic="YES" id="xFO-7N-vbK"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <connections>
@@ -82,7 +89,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="7Nr-Ef-1Zc"/>
                     <connections>
-                        <outlet property="resultsTextView" destination="6Ll-VI-rlb" id="S90-iO-zxI"/>
+                        <outlet property="tableView" destination="zXo-UQ-MMi" id="eCf-cy-m8b"/>
                         <outlet property="taxPctLabel" destination="Nbm-cS-Xrw" id="ZKA-JS-MXN"/>
                         <outlet property="taxPctSlider" destination="KZC-ly-QcO" id="tXH-Nr-pEf"/>
                         <outlet property="totalTextField" destination="z9Y-Lh-YNU" id="WhE-UL-k6u"/>
